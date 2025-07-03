@@ -1,20 +1,64 @@
-
-import './App.css' 
-import { useState } from 'react'
-import React from 'react'
+import "./App.css";
+import { useState } from "react";
+import React from "react";
+import Count from "./Components/Count";
+import TodoList from "./Components/TodoList";
+import Profile from "./Components/Profile";
+import ShoppingList from "./Components/ShoppingList";
 
 function App() {
-  
-
+  // const [friends, setFriends] = useState(["Alex", "John"]);
+  // const [movies, setMovies] = useState([
+  //   {
+  //     id: 1,
+  //     title: "Spider Man",
+  //     ratings: 6,
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Equalizer",
+  //     ratings: 7,
+  //   },
+  // ]);
+  const [count, setCount] = useState(0);
   return (
-        <div className="App">
-          
-        </div>
+    <div className="App">
+      <Count/>
+      <TodoList/>
+      <Profile/>
+      <ShoppingList/>
+      {/* <Count count={count} onClickHandler = {() => setCount(prevCount => prevCount + 1)} /> */}
+      {/* // useState second example
+    
+    //   {movies.map((m) => (
+    //     <li key={Math.random()}>{m.title}</li>
+    //   ))}
+    //   <button 
+    //     onClick={() => { 
+    //       setMovies(
+    //         movies.map((n) =>
+    //           n.id === 1 ? { ...movies, title: "John Wick 5" } : n
+    //         )
+    //       );
+    //     }}
+    //   >Change Name</button> */}
 
-  )
+      {/* useState first example
+          {friends.map((f)=>(
+            <li key={Math.random()}>{f}</li>
+          ))}
+          <button onClick={()=>{setFriends([...friends , 'Judah'])}}>Add new Friend</button>
+          <button onClick={()=>{setFriends(friends.map((one)=>(
+                         one.slice(0 , -1)
+          )))}}>d</button>
+          <button onClick={()=>{setFriends(friends.map((yo)=>(
+            yo === 'Alex' ? 'Alex Smith' : yo
+          )))}}>Update</button> */}
+    </div>
+  );
 }
 
-export default App
+export default App;
 
 // const Testimonials = () => {
 //   const [activeTab, setActiveTab] = useState("education");
@@ -54,7 +98,6 @@ export default App
 //         )}
 //       </div>
 //     </div>
-      
 
 //   )
 // }
