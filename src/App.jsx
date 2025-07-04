@@ -4,6 +4,7 @@ import React from "react";
 import Count from "./Components/Count";
 import TodoList from "./Components/TodoList";
 import Profile from "./Components/Profile";
+import Comment from "./Components/Comment";
 import ShoppingList from "./Components/ShoppingList";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <TodoList/>
       <Profile/>
       <ShoppingList/>
+      <Comment/>
       {/* <Count count={count} onClickHandler = {() => setCount(prevCount => prevCount + 1)} /> */}
       {/* // useState second example
     
