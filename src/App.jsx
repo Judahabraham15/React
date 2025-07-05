@@ -6,6 +6,7 @@ import TodoList from "./Components/TodoList";
 import Profile from "./Components/Profile";
 import Comment from "./Components/Comment";
 import ShoppingList from "./Components/ShoppingList";
+import Password from "./Components/Password";
 
 function App() {
   // const [friends, setFriends] = useState(["Alex", "John"]);
@@ -29,6 +30,7 @@ function App() {
       <Profile/>
       <ShoppingList/>
       <Comment/>
+      <Password/>
       {/* <Count count={count} onClickHandler = {() => setCount(prevCount => prevCount + 1)} /> */}
       {/* // useState second example
     
